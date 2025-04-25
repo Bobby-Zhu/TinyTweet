@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 gem "rails",           "7.0.4"
+gem "bcrypt",          "3.1.18"
 gem "bootstrap-sass",  "3.4.1"
 gem "sassc-rails",     "2.1.2"
 gem "sprockets-rails", "3.4.2"
@@ -17,7 +18,7 @@ gem 'pry'
 
 group :development, :test do
   gem "sqlite3", "1.4.2"
-  gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
+  gem "debug",   ">= 1.6.3", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
