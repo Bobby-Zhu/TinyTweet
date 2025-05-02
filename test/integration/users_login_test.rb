@@ -50,6 +50,21 @@ class ValidLoginTest < ValidLogin
   end
 end
 
+class RememberMe < UsersLogin
+  test "login with remember_me" do
+    log_in_as(@user, remember_me: '1')
+    assert_not cookies[:remember_token].blank?
+    assert_equal cookies[:remember_token], assigns(:user).remember_token
+  end
+
+  test "login without remember_me" do
+    log_in_as(@user, remember_me: '1')
+    log_in_as(@user, remember_me: '0')
+    assert cookies[:remember_token].blank?
+  end
+end
+
+
 class Logout < ValidLogin
 
   def setup
@@ -64,6 +79,10 @@ class LogoutTest < Logout
     assert_not is_logged_in?
     assert_response :see_other
     assert_redirected_to root_url
+  end
+
+  test "logout twice" do
+    delete logout_path
   end
 
   test "redirect after logout" do

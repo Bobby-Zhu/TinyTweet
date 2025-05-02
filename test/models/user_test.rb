@@ -69,4 +69,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
+  test "test authenicated? should return false when remember token is nil" do
+    assert_not @user.authenticated?("")
+  end
 end
