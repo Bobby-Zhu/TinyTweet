@@ -59,7 +59,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
       delete user_path(@user)
     end
     assert_response :see_other
-    assert_redirected_to root_url
+    assert_redirected_to login_url
   end
 
   test "should redirect destroy when logged in as a non-admin" do
