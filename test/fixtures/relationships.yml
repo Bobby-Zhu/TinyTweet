@@ -1,0 +1,15 @@
+one:
+  follower: bobby
+  followed: lana
+
+two:
+  follower: bobby
+  followed: second
+
+three:
+  follower: lana
+  followed: bobby
+
+four:
+  follower: second
+  followed: bobby

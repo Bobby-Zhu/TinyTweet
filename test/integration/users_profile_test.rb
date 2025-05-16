@@ -20,4 +20,7 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
     end
     assert_select 'div.pagination', count=1
   end
+
+  
+  
 end
