@@ -1,43 +1,42 @@
-# Ruby on Rails Tutorial sample application
+# Ruby on Rails Microblogging App (Sample Application)
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](https://www.michaelhartl.com/).
+This is a Twitter-style microblogging web application built using **Ruby on Rails**. It supports full user authentication, account activation via email, micropost creation, user relationships (follow/unfollow), and a personalized timeline.
 
-## License
+This project was completed by following the excellent  
+[*Ruby on Rails Tutorial: Learn Web Development with Rails*](https://www.railstutorial.org/) by [Michael Hartl](https://www.michaelhartl.com/).
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+---
 
-## Getting started
+## 🌱 What I Learned
 
-To get started with the app, clone the repo and then install the needed gems:
+As part of this tutorial, I gained hands-on experience with:
+- Rails MVC architecture and RESTful routes
+- Authentication and user session management
+- Email activation and password reset via Action Mailer
+- Model associations and validations
+- Integration and unit testing using **Minitest**
+- Deployment-readiness concepts
 
-```
-$ gem install bundler -v 2.3.14
-$ bundle _2.3.14_ config set --local without 'production'
-$ bundle _2.3.14_ install
-```
+---
 
-Next, migrate the database:
+## ⚙️ Development Environment (DevContainer)
 
-```
-$ rails db:migrate
-```
+To ensure a consistent and reproducible development experience, I set up the project using **DevContainer** (Docker + VS Code Remote Containers). This removes system dependency issues and allows quick onboarding on any machine.
 
-Finally, run the test suite to verify that everything is working correctly:
+👉 DevContainer setup repository:  
+[https://github.com/Bobby-Zhu/learnenough-ruby-on-rails-devcontainer](https://github.com/Bobby-Zhu/learnenough-ruby-on-rails-devcontainer)
 
-```
-$ rails test
-```
+Features:
+- Ruby 3, Rails 7, Node.js, PostgreSQL, and Yarn pre-installed
+- Auto-load of environment via `.devcontainer/devcontainer.json`
+- Pre-configured for debugging and terminal access in VS Code
 
-If the test suite passes, you'll be ready to run the app in a local server:
+---
 
-```
-$ rails server
-```
+## 🚀 Getting Started (Local Setup)
 
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Bobby-Zhu/sample_app.git
+cd sample_app
