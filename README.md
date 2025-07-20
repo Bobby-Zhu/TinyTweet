@@ -7,7 +7,7 @@ This project was completed by following the excellent
 
 ---
 
-## 🌱 What I Learned
+## What I Learned
 
 As part of this tutorial, I gained hands-on experience with:
 - Rails MVC architecture and RESTful routes
@@ -19,11 +19,11 @@ As part of this tutorial, I gained hands-on experience with:
 
 ---
 
-## ⚙️ Development Environment (DevContainer)
+## Development Environment (DevContainer)
 
 To ensure a consistent and reproducible development experience, I set up the project using **DevContainer** (Docker + VS Code Remote Containers). This removes system dependency issues and allows quick onboarding on any machine.
 
-👉 DevContainer setup repository:  
+DevContainer setup repository:  
 [https://github.com/Bobby-Zhu/learnenough-ruby-on-rails-devcontainer](https://github.com/Bobby-Zhu/learnenough-ruby-on-rails-devcontainer)
 
 Features:
@@ -33,7 +33,7 @@ Features:
 
 ---
 
-## 🚀 Getting Started (Local Setup)
+## Getting Started (Local Setup)
 
 ### 1. Clone the repository
 
